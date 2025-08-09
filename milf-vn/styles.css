@@ -1,0 +1,27 @@
+:root { --bg1: #0f172a; --bg2: #0b1220; --panel: #111827; --border: #334155; --text: #e2e8f0; --muted: #94a3b8; }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 20% 10%, #1f2937, var(--bg1)) fixed;
+}
+#bg {
+  position: fixed; inset: 0; background-size: cover; background-position: center; opacity: 0.25; filter: blur(2px);
+}
+#game { position: relative; max-width: 900px; margin: 0 auto; min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; gap: 12px; }
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; }
+.title { font-weight: 700; letter-spacing: 0.3px; opacity: 0.9; }
+.menu button { margin-left: 8px; }
+.stage { display: grid; align-content: end; padding: 16px; }
+.box { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+.name { font-weight: 700; opacity: 0.85; margin-bottom: 6px; }
+.text { line-height: 1.6; }
+.choices { margin-top: 14px; display: grid; gap: 10px; }
+button { background: #334155; color: var(--text); border: 1px solid #3b4a66; padding: 10px 14px; border-radius: 10px; cursor: pointer; }
+button:hover { background: #475569; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+#sprite-layer { position: absolute; left: 0; right: 0; bottom: 190px; display: flex; justify-content: center; pointer-events: none; }
+.sprite { max-height: 50vh; filter: drop-shadow(0 6px 24px rgba(0,0,0,0.35)); }
+.footer { padding: 10px 16px; color: var(--muted); text-align: center; }
