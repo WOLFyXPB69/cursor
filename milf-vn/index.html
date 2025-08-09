@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starlight Encounters (SFW)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="bg"></div>
+  <div id="game">
+    <header class="topbar">
+      <div class="title">Starlight Encounters</div>
+      <nav class="menu">
+        <button id="btn-save" type="button" title="Save">Save</button>
+        <button id="btn-load" type="button" title="Load">Load</button>
+        <button id="btn-restart" type="button" title="Restart">Restart</button>
+      </nav>
+    </header>
+
+    <main class="stage">
+      <div id="sprite-layer"></div>
+      <div class="dialogue box">
+        <div id="name" class="name"></div>
+        <div id="text" class="text"></div>
+        <div id="choices" class="choices"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>All characters are 25+ and this story is SFW.</small>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
